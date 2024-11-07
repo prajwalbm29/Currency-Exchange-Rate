@@ -18,7 +18,6 @@ function App() {
       }
       const data = await response.json();
       setCurrencyRate(data[currFrom][currTo]);
-      console.log(data[currFrom][currTo])
     } catch (err) {
       console.error("Error fetching data:", err);
     }
